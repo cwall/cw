@@ -3,6 +3,9 @@
 This is HTML5 application, built with [Brunch](http://brunch.io).
 
 ## Work in Progress
+	*Using Sass
+	*Using AngularJS (eventually)
+	*Using Django 1.9.x (eventually)
 <!-- * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch`
