@@ -3,8 +3,7 @@
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	  <title>CW</title>
+	  <title>Carl Waldron</title>
 	  <script src="js/app.js"></script>
 	  <link rel="stylesheet" type="text/css" href="css/styles.css">
 	  <script>require('initialize');</script>
@@ -12,38 +11,50 @@
 	<body>
 		<nav>
 			<div class="landing-column graphic-design">
-				<img class="main-svg" src="/img/icons/icons-graphicdesign.svg">
+				<span class="main-svg-icon">
+					<img src="/img/icons/icons-graphicdesign.svg">
+				</span>
 			</div>
 
 			<div class="landing-column web-design">
-				<img class="main-svg" src="/img/icons/icons-webdesign.svg">
+				<span class="main-svg-icon">
+					<img src="/img/icons/icons-webdesign.svg">
+				</span>
 			</div>
 
 			<div class="landing-column web-development">
-				<img class="main-svg" src="/img/icons/icons-webdevelopment.svg">
+				<span class="main-svg-icon">
+					<img src="/img/icons/icons-webdevelopment.svg">
+				</span>
 			</div>
 
 			<div class="landing-column contact">
-				<img class="main-svg" src="/img/icons/icons-contact.svg">
+				<span class="main-svg-icon">
+					<img src="/img/icons/icons-contact.svg">
+				</span>
 			</div>
 		</nav>
-
-		<section><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1><h1>yes</h1></section>
+		<section></section>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			//$('nav').addClass('active-bar');
-			//var min = $(window).height();
-			// $('nav').addClass('static-bar');
-			$(window).scroll (function () {
-	    	var move = $(this).scrollTop();
-        if (move >= 60) {
-          $('nav').addClass('active-bar');
-        } else {
-          $('nav').removeClass('active-bar')
-        }
-		  });
+			var min = $(window).height();
+			$('.landing-column, section').css({'min-height':min});
+			
+			$(window).resize(function() {
+				var min = $(window).height();
+				$('.landing-column').css({'min-height':min});
+			});
+
+			//$('nav').addClass('static-bar');
+			// $(window).scroll (function () {
+			// 	var min = $(window).height();
+	  //   	var move = $(this).scrollTop();
+   //      if (move >= 100) {
+   //        $('nav').addClass('active-bar');
+   //      } 
+		 //  });
 		});
 	</script>
 	

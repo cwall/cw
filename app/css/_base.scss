@@ -25,7 +25,12 @@ nav {
 
 	.landing-column {
 		@include flex(1 25%);
-		height: 100vh;
+		height: 100%;
+		@include transition(all, .4s, ease-in-out);
+		display: flex;
+		align-items: center;
+  	justify-content: center;
+
 	}
 
 	.graphic-design {
@@ -48,14 +53,19 @@ nav {
 		background-color: $yellow;
 	}
 
-	.main-svg {
-		height: 110px;
-		margin: 0 auto;
+	.main-svg-icon {
 		display: block;
-		@include transition(all, .2s, ease);
+		width: 100%;
+		
+		img {
+			height: 160px;
+			margin: 0 auto;
+			display: block;
+			@include transition(all, .2s, ease);
 
-		&:hover {
-			height: 130px;
+			&:hover {
+				height: 130px;
+			}
 		}
 	}
 
@@ -64,12 +74,35 @@ nav {
 		top: 0;
 		left: 0;
 		right: 0;
+
 		.landing-column {
 			height: 110px;
+			min-height: 110px !important;
 		}
 
-		.main-svg {
-			height: 90px;
+		.main-svg-icon {
+			img {
+				height: 80px;
+
+				&:hover {
+					height: 90px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 240px) and (max-width: 650px) {
+	nav {
+		.landing-column {
+			@include flex(1 50%);
+			min-height: 50vh !important;
+
+			.main-svg-icon {
+				img {
+					height: 80px;
+				}
+			}
 		}
 	}
 }
