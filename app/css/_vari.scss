@@ -1,2 +1,59 @@
 //Variables for project
-$primary: #000;
+$blue :#6184d8;
+$teal: #50c5b7;
+$green: #9cec5b;
+$yellow: #f0f465;
+$purple: #390642;
+$red: #e40040;
+$white: #fff;
+$black: #000;
+
+$primary: $purple;
+$secondary: $blue;
+$tertiary: $teal;
+$highlight: $yellow;
+
+$btn-color: $red;
+$base: $white;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin flex($flex: 1) {
+  flex: $flex;
+  -webkit-box-flex:  $flex;
+  -moz-box-flex:  $flex;   
+  -webkit-flex:  $flex;
+  -ms-flex:  $flex;
+}
+
+@mixin transition ($prop: all, $time: 1s, $ease: linear) {
+  -webkit-transition: $prop $time $ease;
+  -moz-transition: $prop $time $ease;
+  -o-transition: $prop $time $ease;
+  -ms-transition: $prop $time $ease;
+  transition: $prop $time $ease;
+}
+
+.flex-param {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;/* OLD */
+  display: -moz-box;/* OLD */
+  display: box;/* OLD */
+  display: -o-flex;/* OLD (MIDDLE?)*/
+  display: -ms-flexbox;/* MIDDLE */
+  display: flexbox;/* MIDDLE */
+  display: -webkit-flex;/* NEW */
+  display: flex;/* NEW */
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row; 
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap; 
+}

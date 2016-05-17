@@ -12,6 +12,7 @@ module.exports = {
     javascripts: {
     	joinTo: {
     		'js/app.js': /^app/,
+    		'js/angular.min.js': /^app/,
     		'js/vendor.js': /^(vendor|bower_components)/,
     		'test/js/test.js': /^test(\/|\\)(?!vendor)/,
 	      'test/js/test-vendor.js': /^test(\/|\\)(?=vendor)/
