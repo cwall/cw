@@ -1,4 +1,16 @@
-/* line 43, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+@import url("//hello.myfonts.net/count/31bc6e");
+@import url("//hello.myfonts.net/count/31bc6e");
+@font-face {
+  font-family: 'Rift-BoldItalic';
+  src: url("fonts/rift/31BC6E_0_0.eot");
+  src: url("fonts/rift/31BC6E_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/rift/31BC6E_0_0.woff2") format("woff2"), url("fonts/rift/31BC6E_0_0.woff") format("woff"), url("fonts/rift/31BC6E_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Rift-Regular';
+  src: url("fonts/rift/31BC6E_1_0.eot");
+  src: url("fonts/rift/31BC6E_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/rift/31BC6E_1_0.woff2") format("woff2"), url("fonts/rift/31BC6E_1_0.woff") format("woff"), url("fonts/rift/31BC6E_1_0.ttf") format("truetype"); }
+
+/* line 47, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 .flex-param, .toolbar ul, nav {
   padding: 0;
   margin: 0;
@@ -24,6 +36,43 @@
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap; }
+
+/* line 66, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+h2 {
+  font-family: 'Rift-BoldItalic'; }
+
+/* line 70, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+.btn {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  font-family: 'Rift-Regular';
+  text-transform: uppercase;
+  font-size: 1.1em;
+  vertical-align: middle;
+  cursor: pointer; }
+  /* line 87, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  .btn.light {
+    background-color: #fff;
+    color: #000; }
+  /* line 92, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  .btn.dark {
+    background-color: #000;
+    color: #fff; }
 
 /* line 4, /Users/Jarvis/Core/cw/app/css/_base.scss */
 html {
@@ -154,11 +203,45 @@ nav {
 
 /* line 134, /Users/Jarvis/Core/cw/app/css/_base.scss */
 section {
-  min-height: 100vh;
-  background-size: cover; }
+  height: auto;
+  background-size: cover;
+  position: relative; }
+  /* line 139, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  section header {
+    color: #fff;
+    min-height: 50px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    z-index: 2; }
+    /* line 147, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section header::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+    /* line 158, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section header h2 {
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+      font-size: 2em; }
+    /* line 165, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section header .main-svg-icon {
+      display: inline-block;
+      height: 45px;
+      width: 45px;
+      vertical-align: middle; }
+  /* line 174, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  section#graphicdesign header {
+    background-color: #6184d8; }
 
 @media screen and (min-width: 240px) and (max-width: 650px) {
-  /* line 141, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 182, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
     flex: 1 50%;
     -webkit-box-flex: 1 50%;
@@ -166,11 +249,21 @@ section {
     -webkit-flex: 1 50%;
     -ms-flex: 1 50%;
     min-height: 50vh !important; }
-    /* line 146, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 187, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav .landing-column .main-svg-icon img, nav .graphic-design .main-svg-icon img, nav .web-design .main-svg-icon img, nav .web-development .main-svg-icon img, nav .contact .main-svg-icon img {
       height: 80px; } }
 
-/* line 43, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+@font-face {
+  font-family: 'Rift-BoldItalic';
+  src: url("fonts/rift/31BC6E_0_0.eot");
+  src: url("fonts/rift/31BC6E_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/rift/31BC6E_0_0.woff2") format("woff2"), url("fonts/rift/31BC6E_0_0.woff") format("woff"), url("fonts/rift/31BC6E_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Rift-Regular';
+  src: url("fonts/rift/31BC6E_1_0.eot");
+  src: url("fonts/rift/31BC6E_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/rift/31BC6E_1_0.woff2") format("woff2"), url("fonts/rift/31BC6E_1_0.woff") format("woff"), url("fonts/rift/31BC6E_1_0.ttf") format("truetype"); }
+
+/* line 47, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 .flex-param, .toolbar ul, nav {
   padding: 0;
   margin: 0;
@@ -196,6 +289,43 @@ section {
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap; }
+
+/* line 66, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+h2 {
+  font-family: 'Rift-BoldItalic'; }
+
+/* line 70, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+.btn {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  font-family: 'Rift-Regular';
+  text-transform: uppercase;
+  font-size: 1.1em;
+  vertical-align: middle;
+  cursor: pointer; }
+  /* line 87, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  .btn.light {
+    background-color: #fff;
+    color: #000; }
+  /* line 92, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  .btn.dark {
+    background-color: #000;
+    color: #fff; }
 
 /* line 5, /Users/Jarvis/Core/cw/app/css/styles.scss */
 *, *:before, *:after {

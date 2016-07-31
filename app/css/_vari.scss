@@ -17,6 +17,10 @@ $highlight: $yellow;
 $btn-color: $red;
 $base: $white;
 
+@import url("//hello.myfonts.net/count/31bc6e");
+@font-face {font-family: 'Rift-BoldItalic';src: url('fonts/rift/31BC6E_0_0.eot');src: url('fonts/rift/31BC6E_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/rift/31BC6E_0_0.woff2') format('woff2'),url('fonts/rift/31BC6E_0_0.woff') format('woff'),url('fonts/rift/31BC6E_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Rift-Regular';src: url('fonts/rift/31BC6E_1_0.eot');src: url('fonts/rift/31BC6E_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/rift/31BC6E_1_0.woff2') format('woff2'),url('fonts/rift/31BC6E_1_0.woff') format('woff'),url('fonts/rift/31BC6E_1_0.ttf') format('truetype');}
+ 
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
@@ -58,3 +62,43 @@ $base: $white;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap; 
 }
+
+h2 {
+  font-family: 'Rift-BoldItalic';
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: transparent;
+  @include border-radius(3px);
+  @include transition(all, 100ms, ease-in);
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  font-family: 'Rift-Regular';
+  text-transform: uppercase;
+  font-size: 1.1em;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &.light {
+    background-color: $white;
+    color: $black;
+  }
+
+  &.dark {
+    background-color: $black;
+    color: $white;
+  }
+
+  &:hover {
+    
+  }
+}
+
+
+
+

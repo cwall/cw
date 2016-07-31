@@ -132,8 +132,49 @@ nav {
 }
 
 section {
-	min-height: 100vh;
+	height: auto;
 	background-size: cover;
+	position: relative;
+
+	header {
+		color: $white;
+		min-height: 50px;
+		height: auto;
+		padding: 10px;
+		position: relative;
+		z-index: 2;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top:0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		h2 {
+			display: inline-block;
+			margin: 0 10px;
+			vertical-align: middle;
+			font-size: 2em;
+		}
+
+		.main-svg-icon {
+			display: inline-block;
+			height: 45px;
+			width: 45px;
+			vertical-align: middle;
+		}
+	}
+
+	&#graphicdesign {
+		header {
+			background-color: $blue;
+		}
+	}
 }
 
 @media screen and (min-width: 240px) and (max-width: 650px) {
