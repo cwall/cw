@@ -204,11 +204,23 @@ nav {
   background-size: cover; }
 
 /* line 136, /Users/Jarvis/Core/cw/app/css/_base.scss */
+.md {
+  background-image: url(../img/samples/md.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+/* line 142, /Users/Jarvis/Core/cw/app/css/_base.scss */
+.zip {
+  background-image: url(../img/samples/zip.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+/* line 147, /Users/Jarvis/Core/cw/app/css/_base.scss */
 section {
   height: auto;
   background-size: cover;
   position: relative; }
-  /* line 141, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 152, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section header {
     color: #fff;
     min-height: 50px;
@@ -216,7 +228,7 @@ section {
     padding: 10px;
     position: relative;
     z-index: 2; }
-    /* line 149, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 160, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section header::before {
       position: absolute;
       content: "";
@@ -226,19 +238,19 @@ section {
       height: 2px;
       background-color: rgba(0, 0, 0, 0.2);
       z-index: 1; }
-    /* line 160, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 171, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section header h2 {
       display: inline-block;
       margin: 0 10px;
       vertical-align: middle;
       font-size: 2em; }
-    /* line 167, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 178, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section header .main-svg-icon {
       display: inline-block;
       height: 45px;
       width: 45px;
       vertical-align: middle; }
-  /* line 175, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 186, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section aside {
     width: 300px;
     position: absolute;
@@ -250,36 +262,36 @@ section {
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 80px 20px 20px; }
-  /* line 188, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 199, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section .featured {
     min-height: 100vh;
     position: relative; }
-  /* line 193, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 204, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section#graphicdesign {
     background-color: #6184d8; }
-    /* line 196, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 207, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section#graphicdesign header {
       background-color: #6184d8; }
-  /* line 201, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 212, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section#webdesign {
     background-color: #50c5b7; }
-    /* line 204, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 215, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section#webdesign header {
       background-color: #50c5b7; }
-  /* line 209, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 220, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section#webdevelopment {
     background-color: #9cec5b; }
-    /* line 212, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 223, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section#webdevelopment header {
       background-color: #9cec5b; }
-  /* line 217, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 228, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section#contact {
     background-color: #f0f465; }
-    /* line 220, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 231, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section#contact header {
       background-color: #f0f465; }
 
-/* line 226, /Users/Jarvis/Core/cw/app/css/_base.scss */
+/* line 237, /Users/Jarvis/Core/cw/app/css/_base.scss */
 .wrapper {
   max-width: 1170px;
   min-width: 300px;
@@ -287,7 +299,7 @@ section {
   height: auto;
   position: relative;
   padding: 30px 0; }
-  /* line 235, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 246, /Users/Jarvis/Core/cw/app/css/_base.scss */
   .wrapper.flex {
     display: -webkit-box;
     /* OLD */
@@ -310,7 +322,7 @@ section {
     -ms-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row; }
-    /* line 239, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 250, /Users/Jarvis/Core/cw/app/css/_base.scss */
     .wrapper.flex .box {
       flex: 1;
       -webkit-box-flex: 1;
@@ -319,7 +331,7 @@ section {
       -ms-flex: 1;
       height: 200px;
       padding: 10px; }
-      /* line 244, /Users/Jarvis/Core/cw/app/css/_base.scss */
+      /* line 255, /Users/Jarvis/Core/cw/app/css/_base.scss */
       .wrapper.flex .box .wrap {
         background-color: #fff;
         height: 100%;
@@ -327,7 +339,7 @@ section {
         min-height: 190px; }
 
 @media screen and (min-width: 240px) and (max-width: 650px) {
-  /* line 256, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 267, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
     flex: 1 50%;
     -webkit-box-flex: 1 50%;
@@ -335,7 +347,7 @@ section {
     -webkit-flex: 1 50%;
     -ms-flex: 1 50%;
     min-height: 50vh !important; }
-    /* line 261, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 272, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav .landing-column .main-svg-icon img, nav .graphic-design .main-svg-icon img, nav .web-design .main-svg-icon img, nav .web-development .main-svg-icon img, nav .contact .main-svg-icon img {
       height: 80px; } }
 
