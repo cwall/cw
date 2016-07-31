@@ -70,13 +70,22 @@ body {
       -ms-transition: all 0.4s ease-in;
       transition: all 0.4s ease-in; }
 
-/* line 44, /Users/Jarvis/Core/cw/app/css/_base.scss */
+/* line 43, /Users/Jarvis/Core/cw/app/css/_base.scss */
+.logo {
+  width: 200px;
+  height: 25px;
+  display: inline-block;
+  background: url(../img/logo.svg) no-repeat center center;
+  background-size: contain;
+  margin: 2px auto; }
+
+/* line 53, /Users/Jarvis/Core/cw/app/css/_base.scss */
 nav {
   width: 100%;
   height: 100%;
   display: block;
   position: relative; }
-  /* line 51, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 60, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
     flex: 1 25%;
     -webkit-box-flex: 1 25%;
@@ -92,23 +101,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center; }
-  /* line 61, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 70, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .graphic-design {
     background-color: #6184d8; }
-  /* line 66, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 75, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .web-design {
     background-color: #50c5b7; }
-  /* line 71, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 80, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .web-development {
     background-color: #9cec5b; }
-  /* line 76, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 85, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .contact {
     background-color: #f0f465; }
-  /* line 81, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 90, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .main-svg-icon {
     display: block;
     width: 100%; }
-    /* line 85, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 94, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav .main-svg-icon img {
       height: 160px;
       margin: 0 auto;
@@ -118,28 +127,38 @@ nav {
       -o-transition: all 0.2s ease;
       -ms-transition: all 0.2s ease;
       transition: all 0.2s ease; }
-      /* line 91, /Users/Jarvis/Core/cw/app/css/_base.scss */
+      /* line 100, /Users/Jarvis/Core/cw/app/css/_base.scss */
       nav .main-svg-icon img:hover {
         height: 130px; }
-  /* line 97, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 106, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav.active-bar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0; }
-    /* line 103, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 112, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav.active-bar .landing-column, nav.active-bar .graphic-design, nav.active-bar .web-design, nav.active-bar .web-development, nav.active-bar .contact {
       height: 110px;
       min-height: 110px !important; }
-    /* line 109, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 118, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav.active-bar .main-svg-icon img {
       height: 80px; }
-      /* line 112, /Users/Jarvis/Core/cw/app/css/_base.scss */
+      /* line 121, /Users/Jarvis/Core/cw/app/css/_base.scss */
       nav.active-bar .main-svg-icon img:hover {
         height: 90px; }
 
+/* line 129, /Users/Jarvis/Core/cw/app/css/_base.scss */
+.shop {
+  background-image: url(../img/samples/shop.jpg);
+  background-position: center center; }
+
+/* line 134, /Users/Jarvis/Core/cw/app/css/_base.scss */
+section {
+  min-height: 100vh;
+  background-size: cover; }
+
 @media screen and (min-width: 240px) and (max-width: 650px) {
-  /* line 122, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 141, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
     flex: 1 50%;
     -webkit-box-flex: 1 50%;
@@ -147,7 +166,7 @@ nav {
     -webkit-flex: 1 50%;
     -ms-flex: 1 50%;
     min-height: 50vh !important; }
-    /* line 127, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 146, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav .landing-column .main-svg-icon img, nav .graphic-design .main-svg-icon img, nav .web-design .main-svg-icon img, nav .web-development .main-svg-icon img, nav .contact .main-svg-icon img {
       height: 80px; } }
 
