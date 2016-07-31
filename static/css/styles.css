@@ -10,7 +10,7 @@
   src: url("fonts/rift/31BC6E_1_0.eot");
   src: url("fonts/rift/31BC6E_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/rift/31BC6E_1_0.woff2") format("woff2"), url("fonts/rift/31BC6E_1_0.woff") format("woff"), url("fonts/rift/31BC6E_1_0.ttf") format("truetype"); }
 
-/* line 47, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+/* line 76, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 .flex-param, .toolbar ul, nav {
   padding: 0;
   margin: 0;
@@ -37,11 +37,11 @@
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap; }
 
-/* line 66, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+/* line 95, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 h2 {
   font-family: 'Rift-BoldItalic'; }
 
-/* line 70, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+/* line 99, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 .btn {
   border: none;
   text-decoration: none;
@@ -65,11 +65,11 @@ h2 {
   font-size: 1.1em;
   vertical-align: middle;
   cursor: pointer; }
-  /* line 87, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  /* line 116, /Users/Jarvis/Core/cw/app/css/_vari.scss */
   .btn.light {
     background-color: #fff;
     color: #000; }
-  /* line 92, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  /* line 121, /Users/Jarvis/Core/cw/app/css/_vari.scss */
   .btn.dark {
     background-color: #000;
     color: #fff; }
@@ -199,14 +199,15 @@ nav {
 /* line 129, /Users/Jarvis/Core/cw/app/css/_base.scss */
 .shop {
   background-image: url(../img/samples/shop.jpg);
-  background-position: center center; }
+  background-position: center center;
+  background-size: cover; }
 
-/* line 134, /Users/Jarvis/Core/cw/app/css/_base.scss */
+/* line 135, /Users/Jarvis/Core/cw/app/css/_base.scss */
 section {
   height: auto;
   background-size: cover;
   position: relative; }
-  /* line 139, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 140, /Users/Jarvis/Core/cw/app/css/_base.scss */
   section header {
     color: #fff;
     min-height: 50px;
@@ -214,7 +215,7 @@ section {
     padding: 10px;
     position: relative;
     z-index: 2; }
-    /* line 147, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 148, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section header::before {
       position: absolute;
       content: "";
@@ -224,24 +225,96 @@ section {
       height: 2px;
       background-color: rgba(0, 0, 0, 0.2);
       z-index: 1; }
-    /* line 158, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 159, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section header h2 {
       display: inline-block;
       margin: 0 10px;
       vertical-align: middle;
       font-size: 2em; }
-    /* line 165, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 166, /Users/Jarvis/Core/cw/app/css/_base.scss */
     section header .main-svg-icon {
       display: inline-block;
       height: 45px;
       width: 45px;
       vertical-align: middle; }
   /* line 174, /Users/Jarvis/Core/cw/app/css/_base.scss */
-  section#graphicdesign header {
+  section .featured {
+    min-height: 100vh;
+    position: relative; }
+  /* line 179, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  section#graphicdesign {
     background-color: #6184d8; }
+    /* line 182, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section#graphicdesign header {
+      background-color: #6184d8; }
+  /* line 187, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  section#webdesign {
+    background-color: #50c5b7; }
+    /* line 190, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section#webdesign header {
+      background-color: #50c5b7; }
+  /* line 195, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  section#webdevelopment {
+    background-color: #9cec5b; }
+    /* line 198, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section#webdevelopment header {
+      background-color: #9cec5b; }
+  /* line 203, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  section#contact {
+    background-color: #f0f465; }
+    /* line 206, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    section#contact header {
+      background-color: #f0f465; }
+
+/* line 212, /Users/Jarvis/Core/cw/app/css/_base.scss */
+.wrapper {
+  max-width: 1170px;
+  min-width: 300px;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  padding: 30px 0; }
+  /* line 221, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  .wrapper.flex {
+    display: -webkit-box;
+    /* OLD */
+    display: -moz-box;
+    /* OLD */
+    display: box;
+    /* OLD */
+    display: -o-flex;
+    /* OLD (MIDDLE?)*/
+    display: -ms-flexbox;
+    /* MIDDLE */
+    display: flexbox;
+    /* MIDDLE */
+    display: -webkit-flex;
+    /* NEW */
+    display: flex;
+    /* NEW */
+    -webkit-flex-direction: horizontal;
+    -moz-flex-direction: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+    /* line 225, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    .wrapper.flex .box {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      height: 200px;
+      padding: 10px; }
+      /* line 230, /Users/Jarvis/Core/cw/app/css/_base.scss */
+      .wrapper.flex .box .wrap {
+        background-color: #fff;
+        height: 100%;
+        display: block;
+        min-height: 190px; }
 
 @media screen and (min-width: 240px) and (max-width: 650px) {
-  /* line 182, /Users/Jarvis/Core/cw/app/css/_base.scss */
+  /* line 242, /Users/Jarvis/Core/cw/app/css/_base.scss */
   nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
     flex: 1 50%;
     -webkit-box-flex: 1 50%;
@@ -249,7 +322,7 @@ section {
     -webkit-flex: 1 50%;
     -ms-flex: 1 50%;
     min-height: 50vh !important; }
-    /* line 187, /Users/Jarvis/Core/cw/app/css/_base.scss */
+    /* line 247, /Users/Jarvis/Core/cw/app/css/_base.scss */
     nav .landing-column .main-svg-icon img, nav .graphic-design .main-svg-icon img, nav .web-design .main-svg-icon img, nav .web-development .main-svg-icon img, nav .contact .main-svg-icon img {
       height: 80px; } }
 
@@ -263,7 +336,7 @@ section {
   src: url("fonts/rift/31BC6E_1_0.eot");
   src: url("fonts/rift/31BC6E_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/rift/31BC6E_1_0.woff2") format("woff2"), url("fonts/rift/31BC6E_1_0.woff") format("woff"), url("fonts/rift/31BC6E_1_0.ttf") format("truetype"); }
 
-/* line 47, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+/* line 76, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 .flex-param, .toolbar ul, nav {
   padding: 0;
   margin: 0;
@@ -290,11 +363,11 @@ section {
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap; }
 
-/* line 66, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+/* line 95, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 h2 {
   font-family: 'Rift-BoldItalic'; }
 
-/* line 70, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+/* line 99, /Users/Jarvis/Core/cw/app/css/_vari.scss */
 .btn {
   border: none;
   text-decoration: none;
@@ -318,11 +391,11 @@ h2 {
   font-size: 1.1em;
   vertical-align: middle;
   cursor: pointer; }
-  /* line 87, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  /* line 116, /Users/Jarvis/Core/cw/app/css/_vari.scss */
   .btn.light {
     background-color: #fff;
     color: #000; }
-  /* line 92, /Users/Jarvis/Core/cw/app/css/_vari.scss */
+  /* line 121, /Users/Jarvis/Core/cw/app/css/_vari.scss */
   .btn.dark {
     background-color: #000;
     color: #fff; }

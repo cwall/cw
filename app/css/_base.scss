@@ -129,6 +129,7 @@ nav {
 .shop {
 	background-image: url(../img/samples/shop.jpg);
 	background-position: center center;
+	background-size: cover;
 }
 
 section {
@@ -170,9 +171,68 @@ section {
 		}
 	}
 
+	.featured {
+		min-height: 100vh;
+		position: relative;
+	}
+
 	&#graphicdesign {
+		background-color: $blue;
+
 		header {
 			background-color: $blue;
+		}
+	}
+
+	&#webdesign {
+		background-color: $teal;
+
+		header {
+			background-color: $teal;
+		}
+	}
+
+	&#webdevelopment {
+		background-color: $green;
+
+		header {
+			background-color: $green;
+		}
+	}
+
+	&#contact {
+		background-color: $yellow;
+
+		header {
+			background-color: $yellow;
+		}
+	}
+}
+
+.wrapper {
+	max-width: 1170px;
+	min-width: 300px;
+	margin: 0 auto;
+	height: auto;
+	// min-height: 100vh;
+	position: relative;
+	padding: 30px 0;
+
+	&.flex {
+		@include flex-box;
+		@include flex-direction(1);
+
+		.box {
+			@include flex(1);
+			height: 200px;
+			padding: 10px;
+
+			.wrap {
+				background-color: $white;
+				height: 100%;
+				display: block;
+				min-height: 190px;
+			}
 		}
 	}
 }
