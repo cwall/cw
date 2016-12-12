@@ -4,7 +4,7 @@ $teal: #50c5b7;
 $green: #9cec5b;
 $yellow: #f0f465;
 $purple: #390642;
-$red: #e40040;
+$red: #FF5154;
 $white: #fff;
 $black: #000;
 $gray: #e9e9e9;
@@ -18,8 +18,8 @@ $btn-color: $red;
 $base: $white;
 
 @import url("//hello.myfonts.net/count/31bc6e");
-@font-face {font-family: 'Rift-BoldItalic';src: url('fonts/rift/31BC6E_0_0.eot');src: url('fonts/rift/31BC6E_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/rift/31BC6E_0_0.woff2') format('woff2'),url('fonts/rift/31BC6E_0_0.woff') format('woff'),url('fonts/rift/31BC6E_0_0.ttf') format('truetype');}
-@font-face {font-family: 'Rift-Regular';src: url('fonts/rift/31BC6E_1_0.eot');src: url('fonts/rift/31BC6E_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/rift/31BC6E_1_0.woff2') format('woff2'),url('fonts/rift/31BC6E_1_0.woff') format('woff'),url('fonts/rift/31BC6E_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Rift-BoldItalic';src: url('../fonts/rift/31BC6E_0_0.eot');src: url('../fonts/rift/31BC6E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/rift/31BC6E_0_0.woff2') format('woff2'),url('../fonts/rift/31BC6E_0_0.woff') format('woff'),url('../fonts/rift/31BC6E_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Rift-Regular';src: url('../fonts/rift/31BC6E_1_0.eot');src: url('../fonts/rift/31BC6E_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/rift/31BC6E_1_0.woff2') format('woff2'),url('../fonts/rift/31BC6E_1_0.woff') format('woff'),url('../fonts/rift/31BC6E_1_0.ttf') format('truetype');}
  
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;

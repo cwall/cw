@@ -85,7 +85,7 @@ nav {
 
 	.contact {
 		@extend .landing-column;
-		background-color: $yellow;
+		background-color: $purple;
 	}
 
 	.main-svg-icon {
@@ -232,10 +232,10 @@ section {
 	}
 
 	&#contact {
-		background-color: $yellow;
+		background-color: $purple;
 
 		header {
-			background-color: $yellow;
+			background-color: $purple;
 		}
 	}
 }
@@ -311,7 +311,7 @@ section {
 			font-weight: 100;
 			width: 100%;
 			outline: none;
-			@extend transition(all, .3s, ease-in-out);
+			@include transition(all, .3s, ease-in-out);
 
 			&:focus {
 				border-bottom-color: $red;
