@@ -1,17 +1,31 @@
-@import url("//hello.myfonts.net/count/31bc6e");
-@import url("//hello.myfonts.net/count/31bc6e");
 @font-face {
-  font-family: 'Rift-BoldItalic';
-  src: url("../fonts/rift/31BC6E_0_0.eot");
-  src: url("../fonts/rift/31BC6E_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/rift/31BC6E_0_0.woff2") format("woff2"), url("../fonts/rift/31BC6E_0_0.woff") format("woff"), url("../fonts/rift/31BC6E_0_0.ttf") format("truetype"); }
+  font-family: 'Nexa';
+  font-weight: normal;
+  font-style: italic;
+  src: url("/fonts/32B99F_0_0.eot");
+  src: url("/fonts/32B99F_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B99F_0_0.woff2") format("woff2"), url("/fonts/32B99F_0_0.woff") format("woff"), url("/fonts/32B99F_0_0.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'Rift-Regular';
-  src: url("../fonts/rift/31BC6E_1_0.eot");
-  src: url("../fonts/rift/31BC6E_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/rift/31BC6E_1_0.woff2") format("woff2"), url("../fonts/rift/31BC6E_1_0.woff") format("woff"), url("../fonts/rift/31BC6E_1_0.ttf") format("truetype"); }
+  font-family: 'Nexa';
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/32B99F_1_0.eot");
+  src: url("/fonts/32B99F_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B99F_1_0.woff2") format("woff2"), url("/fonts/32B99F_1_0.woff") format("woff"), url("/fonts/32B99F_1_0.ttf") format("truetype"); }
 
-/* line 76, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
-.flex-param, .toolbar ul, nav {
+@font-face {
+  font-family: 'NexaHeavyItalic';
+  src: url("/fonts/32B99F_2_0.eot");
+  src: url("/fonts/32B99F_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B99F_2_0.woff2") format("woff2"), url("/fonts/32B99F_2_0.woff") format("woff"), url("/fonts/32B99F_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Nexa';
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/32B99F_3_0.eot");
+  src: url("/fonts/32B99F_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B99F_3_0.woff2") format("woff2"), url("/fonts/32B99F_3_0.woff") format("woff"), url("/fonts/32B99F_3_0.ttf") format("truetype"); }
+
+/* line 77, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+.flex-param, .toolbar ul {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -37,11 +51,11 @@
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap; }
 
-/* line 95, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+/* line 96, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
 h2 {
   font-family: 'Rift-BoldItalic'; }
 
-/* line 99, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+/* line 100, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
 .btn {
   border: none;
   text-decoration: none;
@@ -65,11 +79,11 @@ h2 {
   font-size: 1.1em;
   vertical-align: middle;
   cursor: pointer; }
-  /* line 116, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+  /* line 117, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
   .btn.light {
     background-color: #fff;
     color: #000; }
-  /* line 121, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+  /* line 122, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
   .btn.dark {
     background-color: #000;
     color: #fff; }
@@ -79,18 +93,40 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  line-height: 1; }
+  line-height: 1;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
 
-/* line 11, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 12, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 body {
   color: #000;
   font-size: 16px;
-  padding: 0;
+  padding: 1em;
   margin: 0;
+  border: 20px solid #fff;
   background-color: #f7f8f9;
-  font-family: "Helveica", sans-serif; }
+  min-height: 100vh;
+  font-family: 'Nexa', 'Helvetica', sans-serif; }
 
-/* line 20, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 23, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+#masthead {
+  margin: 1em auto;
+  width: 100%;
+  height: auto;
+  display: block; }
+
+/* line 30, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+a {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 34, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .toolbar {
   width: 100%;
   display: block;
@@ -99,13 +135,13 @@ body {
   color: #000;
   height: 40px;
   border-bottom: 1px solid #e9e9e9; }
-  /* line 29, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 43, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   .toolbar ul {
     padding: 0;
     margin: 0;
     width: 100%;
     list-style: none; }
-    /* line 36, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    /* line 50, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     .toolbar ul li {
       flex: 1;
       -webkit-box-flex: 1;
@@ -120,320 +156,55 @@ body {
       -ms-transition: all 0.4s ease-in;
       transition: all 0.4s ease-in; }
 
-/* line 44, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 59, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .logo {
-  width: 200px;
-  height: 25px;
+  width: 600px;
+  height: 80px;
   display: inline-block;
-  background: url(../img/logo.svg) no-repeat center center;
+  background: url(../img/waldron-logo.svg) no-repeat center center;
   background-size: contain;
-  margin: 2px auto; }
+  margin: 0 auto; }
 
-/* line 54, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 68, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.title {
+  font-family: 'Nexa', 'Helvetica', sans-serif;
+  font-size: 3em !important;
+  font-weight: bold;
+  line-height: normal; }
+
+/* line 75, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.subtitle {
+  font-family: Georgia, serif;
+  color: #808895;
+  font-size: 1.5em;
+  text-transform: lowercase; }
+
+/* line 82, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 nav {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: relative; }
-  /* line 61, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
-    flex: 1 25%;
-    -webkit-box-flex: 1 25%;
-    -moz-box-flex: 1 25%;
-    -webkit-flex: 1 25%;
-    -ms-flex: 1 25%;
-    height: 100%;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  /* line 71, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .graphic-design {
-    background-color: #6184d8; }
-  /* line 76, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .web-design {
-    background-color: #50c5b7; }
-  /* line 81, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .web-development {
-    background-color: #9cec5b; }
-  /* line 86, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .contact {
-    background-color: #390642; }
-  /* line 91, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .main-svg-icon {
-    display: block;
-    width: 100%; }
-    /* line 95, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    nav .main-svg-icon img {
-      height: 160px;
-      margin: 0 auto;
-      display: block;
-      -webkit-transition: all 0.8s ease;
-      -moz-transition: all 0.8s ease;
-      -o-transition: all 0.8s ease;
-      -ms-transition: all 0.8s ease;
-      transition: all 0.8s ease; }
-      /* line 101, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-      nav .main-svg-icon img:hover {
-        height: 130px; }
-  /* line 107, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav.active-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; }
-    /* line 113, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    nav.active-bar .landing-column, nav.active-bar .graphic-design, nav.active-bar .web-design, nav.active-bar .web-development, nav.active-bar .contact {
-      height: 110px;
-      min-height: 110px !important; }
-    /* line 119, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    nav.active-bar .main-svg-icon img {
-      height: 80px; }
-      /* line 122, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-      nav.active-bar .main-svg-icon img:hover {
-        height: 90px; }
-
-/* line 129, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-.fixed-hero, .shop, .md, .zip {
-  background-attachment: fixed; }
-
-/* line 133, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-.shop {
-  background-image: url(../img/samples/shop.jpg);
-  background-position: center center;
-  background-size: cover; }
-
-/* line 140, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-.md {
-  background-image: url(../img/samples/md.jpg);
-  background-position: center center;
-  background-size: cover; }
-
-/* line 147, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-.zip {
-  background-image: url(../img/samples/zip.jpg);
-  background-position: center center;
-  background-size: cover; }
-
-/* line 153, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-section {
-  height: auto;
-  background-size: cover;
-  position: relative; }
-  /* line 158, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section header {
-    color: #fff;
-    min-height: 50px;
-    height: auto;
+  display: inline-block; }
+  /* line 85, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  nav a {
+    display: inline-block;
+    font-family: Georgia;
+    text-decoration: none;
+    color: #808895;
     padding: 10px;
-    position: relative;
-    z-index: 2; }
-    /* line 166, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section header::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: rgba(0, 0, 0, 0.2);
-      z-index: 1; }
-    /* line 177, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section header h2 {
-      display: inline-block;
-      margin: 0 10px;
-      vertical-align: middle;
-      font-size: 2em; }
-    /* line 184, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section header .main-svg-icon {
-      display: inline-block;
-      height: 45px;
-      width: 45px;
-      vertical-align: middle; }
-  /* line 192, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section aside {
-    width: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    font-size: .825em;
-    line-height: 1.3;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 80px 20px 20px; }
-  /* line 205, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section .featured {
-    min-height: 100vh;
-    position: relative; }
-  /* line 210, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section#graphicdesign {
-    background-color: #6184d8; }
-    /* line 213, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section#graphicdesign header {
-      background-color: #6184d8; }
-  /* line 218, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section#webdesign {
-    background-color: #50c5b7; }
-    /* line 221, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section#webdesign header {
-      background-color: #50c5b7; }
-  /* line 226, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section#webdevelopment {
-    background-color: #9cec5b; }
-    /* line 229, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section#webdevelopment header {
-      background-color: #9cec5b; }
-  /* line 234, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  section#contact {
-    background-color: #390642; }
-    /* line 237, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    section#contact header {
-      background-color: #390642; }
+    font-size: 1.3em; }
+    /* line 93, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    nav a:hover {
+      background-color: #fdfdfd;
+      color: #FF5154; }
 
-/* line 243, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-.wrapper {
-  max-width: 1170px;
+/* line 100, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.contain {
+  max-width: 1330px;
   min-width: 300px;
   margin: 0 auto;
-  height: auto;
-  position: relative;
-  padding: 30px 0; }
-  /* line 252, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  .wrapper.flex {
-    display: -webkit-box;
-    /* OLD */
-    display: -moz-box;
-    /* OLD */
-    display: box;
-    /* OLD */
-    display: -o-flex;
-    /* OLD (MIDDLE?)*/
-    display: -ms-flexbox;
-    /* MIDDLE */
-    display: flexbox;
-    /* MIDDLE */
-    display: -webkit-flex;
-    /* NEW */
-    display: flex;
-    /* NEW */
-    -webkit-flex-direction: horizontal;
-    -moz-flex-direction: horizontal;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row; }
-    /* line 256, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    .wrapper.flex .box {
-      flex: 1;
-      -webkit-box-flex: 1;
-      -moz-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      height: 200px;
-      padding: 10px; }
-      /* line 261, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-      .wrapper.flex .box .wrap {
-        background-color: #fff;
-        height: 100%;
-        display: block;
-        min-height: 190px; }
-
-/* line 270, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-#contact-form-wrapper {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 20;
-  display: none; }
-  /* line 283, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  #contact-form-wrapper.active {
-    display: block; }
-  /* line 287, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  #contact-form-wrapper .contact-form {
-    width: 80%;
-    padding: 20px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    border-radius: 7px;
-    border: 1px solid #d9d9d9;
-    z-index: 30;
-    height: 440px;
-    min-height: 200px; }
-    /* line 303, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    #contact-form-wrapper .contact-form input {
-      display: block;
-      border: none;
-      border-bottom: 1px solid #000;
-      color: #000;
-      font-size: 2em;
-      padding: 0 10px;
-      margin: 0 0 1em 0;
-      font-weight: 100;
-      width: 100%;
-      outline: none;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-      /* line 316, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-      #contact-form-wrapper .contact-form input:focus {
-        border-bottom-color: #FF5154;
-        color: #FF5154; }
-      /* line 321, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-      #contact-form-wrapper .contact-form input[type="checkbox"] {
-        visibility: hidden;
-        opacity: 0;
-        width: .1;
-        height: .1;
-        margin: 0;
-        padding: 0; }
-
-@media screen and (min-width: 240px) and (max-width: 650px) {
-  /* line 339, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  nav .landing-column, nav .graphic-design, nav .web-design, nav .web-development, nav .contact {
-    flex: 1 50%;
-    -webkit-box-flex: 1 50%;
-    -moz-box-flex: 1 50%;
-    -webkit-flex: 1 50%;
-    -ms-flex: 1 50%;
-    min-height: 50vh !important; }
-    /* line 344, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-    nav .landing-column .main-svg-icon img, nav .graphic-design .main-svg-icon img, nav .web-design .main-svg-icon img, nav .web-development .main-svg-icon img, nav .contact .main-svg-icon img {
-      height: 80px; } }
-
-@font-face {
-  font-family: 'Rift-BoldItalic';
-  src: url("../fonts/rift/31BC6E_0_0.eot");
-  src: url("../fonts/rift/31BC6E_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/rift/31BC6E_0_0.woff2") format("woff2"), url("../fonts/rift/31BC6E_0_0.woff") format("woff"), url("../fonts/rift/31BC6E_0_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Rift-Regular';
-  src: url("../fonts/rift/31BC6E_1_0.eot");
-  src: url("../fonts/rift/31BC6E_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/rift/31BC6E_1_0.woff2") format("woff2"), url("../fonts/rift/31BC6E_1_0.woff") format("woff"), url("../fonts/rift/31BC6E_1_0.ttf") format("truetype"); }
-
-/* line 76, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
-.flex-param, .toolbar ul, nav {
   padding: 0;
-  margin: 0;
+  position: relative; }
+
+/* line 108, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.row {
   display: -webkit-box;
   /* OLD */
   display: -moz-box;
@@ -450,51 +221,88 @@ section {
   /* NEW */
   display: flex;
   /* NEW */
-  align-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
   flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap; }
+  padding: 0;
+  margin: 0 0 1em 0; }
+  /* line 114, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .row ~ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  /* line 120, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .row .col {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1; }
+    /* line 123, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    .row .col-full {
+      flex: 1 0 100%;
+      -webkit-box-flex: 1 0 100%;
+      -moz-box-flex: 1 0 100%;
+      -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+      padding: 12px;
+      margin: 0 0 1em 0; }
+    /* line 129, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    .row .col-half {
+      flex: 1 0 50%;
+      -webkit-box-flex: 1 0 50%;
+      -moz-box-flex: 1 0 50%;
+      -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+      padding: 12px;
+      margin: 0 12px 1em 0; }
+      /* line 134, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-half:last-child {
+        margin-right: 0; }
+    /* line 138, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    .row .col-third {
+      flex: 1 0 33.33%;
+      -webkit-box-flex: 1 0 33.33%;
+      -moz-box-flex: 1 0 33.33%;
+      -webkit-flex: 1 0 33.33%;
+      -ms-flex: 1 0 33.33%;
+      padding: 12px;
+      margin: 0 12px 1em 0; }
+      /* line 143, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-third:last-child {
+        margin-right: 0; }
+    /* line 147, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    .row .col-fourth {
+      flex: 1 0 25%;
+      -webkit-box-flex: 1 0 25%;
+      -moz-box-flex: 1 0 25%;
+      -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+      padding: 12px;
+      margin: 0 12px 1em 0; }
+      /* line 152, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-fourth:last-child {
+        margin-right: 0; }
 
-/* line 95, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
-h2 {
-  font-family: 'Rift-BoldItalic'; }
+@media screen and (min-width: 660px) and (max-width: 925px) {
+  /* line 160, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .logo {
+    width: 400px;
+    height: 50px;
+    vertical-align: baseline; } }
 
-/* line 99, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
-.btn {
-  border: none;
-  text-decoration: none;
-  background-color: transparent;
-  color: transparent;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: all 100ms ease-in;
-  -moz-transition: all 100ms ease-in;
-  -o-transition: all 100ms ease-in;
-  -ms-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-  display: inline-block;
-  padding: 6px 12px;
-  text-align: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  font-family: 'Rift-Regular';
-  text-transform: uppercase;
-  font-size: 1.1em;
-  vertical-align: middle;
-  cursor: pointer; }
-  /* line 116, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
-  .btn.light {
-    background-color: #fff;
-    color: #000; }
-  /* line 121, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
-  .btn.dark {
-    background-color: #000;
-    color: #fff; }
+@media screen and (min-width: 240px) and (max-width: 650px) {
+  /* line 167, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .logo {
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
+  /* line 173, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  nav {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center; } }
 
-/* line 5, /Users/cwaldron/Sites/CW/cw/app/css/styles.scss */
+/* line 4, /Users/cwaldron/Sites/CW/cw/app/css/styles.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

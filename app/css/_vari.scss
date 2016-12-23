@@ -17,10 +17,11 @@ $highlight: $yellow;
 $btn-color: $red;
 $base: $white;
 
-@import url("//hello.myfonts.net/count/31bc6e");
-@font-face {font-family: 'Rift-BoldItalic';src: url('../fonts/rift/31BC6E_0_0.eot');src: url('../fonts/rift/31BC6E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/rift/31BC6E_0_0.woff2') format('woff2'),url('../fonts/rift/31BC6E_0_0.woff') format('woff'),url('../fonts/rift/31BC6E_0_0.ttf') format('truetype');}
-@font-face {font-family: 'Rift-Regular';src: url('../fonts/rift/31BC6E_1_0.eot');src: url('../fonts/rift/31BC6E_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/rift/31BC6E_1_0.woff2') format('woff2'),url('../fonts/rift/31BC6E_1_0.woff') format('woff'),url('../fonts/rift/31BC6E_1_0.ttf') format('truetype');}
- 
+@font-face {font-family: 'Nexa';font-weight: normal;font-style: italic;src: url('/fonts/32B99F_0_0.eot');src: url('/fonts/32B99F_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B99F_0_0.woff2') format('woff2'),url('/fonts/32B99F_0_0.woff') format('woff'),url('/fonts/32B99F_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Nexa';font-weight: normal;font-style: normal;src: url('/fonts/32B99F_1_0.eot');src: url('/fonts/32B99F_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B99F_1_0.woff2') format('woff2'),url('/fonts/32B99F_1_0.woff') format('woff'),url('/fonts/32B99F_1_0.ttf') format('truetype');}
+@font-face {font-family: 'NexaHeavyItalic';src: url('/fonts/32B99F_2_0.eot');src: url('/fonts/32B99F_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B99F_2_0.woff2') format('woff2'),url('/fonts/32B99F_2_0.woff') format('woff'),url('/fonts/32B99F_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Nexa';font-weight: bold;font-style: normal;src: url('/fonts/32B99F_3_0.eot');src: url('/fonts/32B99F_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B99F_3_0.woff2') format('woff2'),url('/fonts/32B99F_3_0.woff') format('woff'),url('/fonts/32B99F_3_0.ttf') format('truetype');}
+  
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;

@@ -6,15 +6,29 @@ html {
   padding: 0;
   height: 100%;
   line-height: 1;
+  @include transition(all, .2s, ease-in);
 }
 
 body {
 	color: $black;
 	font-size: 16px;
-	padding: 0;
+	padding: 1em;
 	margin: 0;
-	background-color: #f7f8f9; 
-	font-family: "Helveica", sans-serif;
+	border: 20px solid $white;
+	background-color: #f7f8f9;
+	min-height: 100vh;
+	font-family: 'Nexa', 'Helvetica', sans-serif;
+}
+
+#masthead {
+	margin: 1em auto;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	@include transition(all, .2s, ease-in);
 }
 
 .toolbar {
@@ -41,310 +55,125 @@ body {
 		}
 	}
 }
-.logo {
-	width: 200px;
-	height: 25px;
-	display: inline-block;
-	background: url(../img/logo.svg) no-repeat center center;
-	background-size: contain;
-	margin: 2px auto;
 
+.logo {
+	width: 600px;
+	height: 80px;
+	display: inline-block;
+	background: url(../img/waldron-logo.svg) no-repeat center center;
+	background-size: contain;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: 'Nexa', 'Helvetica', sans-serif;
+	font-size: 3em !important;
+	font-weight: bold;
+	line-height: normal;
+}
+
+.subtitle {
+	font-family: Georgia, serif;
+	color: #808895;
+	font-size: 1.5em;
+	text-transform: lowercase;
 }
 
 nav {
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: relative;
-	@extend .flex-param;
+	display: inline-block;
 
-	.landing-column {
-		@include flex(1 25%);
-		height: 100%;
-		@include transition(all, .4s, ease-in-out);
-		display: flex;
-		align-items: center;
-  	justify-content: center;
-
-	}
-
-	.graphic-design {
-		@extend .landing-column;
-		background-color: $blue;
-	}
-
-	.web-design {
-		@extend .landing-column;
-		background-color: $teal;
-	}
-
-	.web-development {
-		@extend .landing-column;
-		background-color: $green;
-	}
-
-	.contact {
-		@extend .landing-column;
-		background-color: $purple;
-	}
-
-	.main-svg-icon {
-		display: block;
-		width: 100%;
-		
-		img {
-			height: 160px;
-			margin: 0 auto;
-			display: block;
-			@include transition(all, .8s, ease);
-
-			&:hover {
-				height: 130px;
-			}
-		}
-	}
-
-	&.active-bar {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-
-		.landing-column {
-			height: 110px;
-			min-height: 110px !important;
-		}
-
-		.main-svg-icon {
-			img {
-				height: 80px;
-
-				&:hover {
-					height: 90px;
-				}
-			}
-		}
-	}
-}
-.fixed-hero {
-	background-attachment: fixed; 
-}
-
-.shop {
-	background-image: url(../img/samples/shop.jpg);
-	background-position: center center;
-	background-size: cover;
-	@extend .fixed-hero;
-}
-
-.md {
-	background-image: url(../img/samples/md.jpg);
-	background-position: center center;
-	background-size: cover;
-	@extend .fixed-hero;
-}
-
-.zip {
-	background-image: url(../img/samples/zip.jpg);
-	background-position: center center;
-	background-size: cover;
-	@extend .fixed-hero;
-}
-section {
-	height: auto;
-	background-size: cover;
-	position: relative;
-
-	header {
-		color: $white;
-		min-height: 50px;
-		height: auto;
+	a {
+		display: inline-block;
+		font-family: Georgia;
+		text-decoration: none;
+		color: #808895;
 		padding: 10px;
-		position: relative;
-		z-index: 2;
+		font-size: 1.3em;
 
-		&::before {
-			position: absolute;
-			content: "";
-			top:0;
-			left: 0;
-			right: 0;
-			height: 2px;
-			background-color: rgba(0,0,0,0.2);
-			z-index: 1;
-		}
-
-		h2 {
-			display: inline-block;
-			margin: 0 10px;
-			vertical-align: middle;
-			font-size: 2em;
-		}
-
-		.main-svg-icon {
-			display: inline-block;
-			height: 45px;
-			width: 45px;
-			vertical-align: middle;
-		}
-	}
-
-	aside {
-		width: 300px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		font-size: .825em;
-		line-height: 1.3;
-		background-color: rgba(0,0,0,0.6);
-		color: $white;
-		padding: 80px 20px 20px;
-	}
-
-	.featured {
-		min-height: 100vh;
-		position: relative;
-	}
-
-	&#graphicdesign {
-		background-color: $blue;
-
-		header {
-			background-color: $blue;
-		}
-	}
-
-	&#webdesign {
-		background-color: $teal;
-
-		header {
-			background-color: $teal;
-		}
-	}
-
-	&#webdevelopment {
-		background-color: $green;
-
-		header {
-			background-color: $green;
-		}
-	}
-
-	&#contact {
-		background-color: $purple;
-
-		header {
-			background-color: $purple;
+		&:hover {
+			background-color: #fdfdfd;
+			color: $red;
 		}
 	}
 }
 
-.wrapper {
-	max-width: 1170px;
+.contain {
+	max-width: 1330px;
 	min-width: 300px;
 	margin: 0 auto;
-	height: auto;
-	// min-height: 100vh;
+	padding: 0;
 	position: relative;
-	padding: 30px 0;
-
-	&.flex {
-		@include flex-box;
-		@include flex-direction(1);
-
-		.box {
-			@include flex(1);
-			height: 200px;
-			padding: 10px;
-
-			.wrap {
-				background-color: $white;
-				height: 100%;
-				display: block;
-				min-height: 190px;
-			}
-		}
-	}
 }
-#contact-form-wrapper {
-	content: "";
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.8);
-	z-index: 20;
-	display: none;
 
-	&.active {
-		display: block;
+.row {
+	@include flex-box()
+	flex-flow: row wrap;
+	padding: 0;
+	margin: 0 0 1em 0;
+
+	&~ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 	}
 
-	.contact-form {
-		width: 80%;
-		padding:20px;
-		margin: auto;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: $white;
-		@include border-radius(7px);
-		border: 1px solid #d9d9d9;
-		z-index: 30;
-		height: 440px;
-		min-height: 200px;
+	.col {
+		@include flex(1);
 
-		input {
-			display: block;
-			border: none;
-			border-bottom: 1px solid $black;
-			color: $black;
-			font-size: 2em;
-			padding: 0 10px;
+		&-full {
+			@include flex(1 0 100%);
+			padding: 12px;
 			margin: 0 0 1em 0;
-			font-weight: 100;
-			width: 100%;
-			outline: none;
-			@include transition(all, .3s, ease-in-out);
-
-			&:focus {
-				border-bottom-color: $red;
-				color: $red;
-			}
-			
-			&[type="checkbox"] {
-				visibility: hidden;
-				opacity: 0;
-				width: .1;
-				height: .1;
-				margin: 0;
-				padding: 0;
-			}
 		}
 
+		&-half {
+			@include flex(1 0 50%);
+			padding: 12px;
+			margin: 0 12px 1em 0;
 
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-third {
+			@include flex(1 0 33.33%);
+			padding: 12px;
+			margin: 0 12px 1em 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-fourth {
+			@include flex(1 0 25%);
+			padding: 12px;
+			margin: 0 12px 1em 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 }
 
-
-
+@media screen and (min-width: 660px) and (max-width: 925px) {
+	.logo {
+		width: 400px;
+		height: 50px;
+		vertical-align: baseline;
+	}
+}
 @media screen and (min-width: 240px) and (max-width: 650px) {
-	nav {
-		.landing-column {
-			@include flex(1 50%);
-			min-height: 50vh !important;
+	.logo {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
 
-			.main-svg-icon {
-				img {
-					height: 80px;
-				}
-			}
-		}
+	nav {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
