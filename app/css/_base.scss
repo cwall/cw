@@ -5,14 +5,12 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  line-height: 1;
-  @include transition(all, .2s, ease-in);
 }
 
 body {
 	color: $black;
 	font-size: 16px;
-	padding: 1em;
+	padding: 0;
 	margin: 0;
 	border: 20px solid $white;
 	background-color: #f7f8f9;
@@ -22,6 +20,7 @@ body {
 
 #masthead {
 	margin: 1em auto;
+	padding: 1em;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -65,11 +64,20 @@ a {
 	margin: 0 auto;
 }
 
+.section-header {
+	margin: 0 0 2em 0;
+	width: 100%;
+	display: block;
+	padding: 0 0 1em 0;
+	border-bottom: 1px solid $gray;
+}
+
 .title {
 	font-family: 'Nexa', 'Helvetica', sans-serif;
-	font-size: 3em !important;
+	font-size: 4em !important;
 	font-weight: bold;
 	line-height: normal;
+	margin: 0 0 10px 0;
 }
 
 .subtitle {
@@ -77,6 +85,7 @@ a {
 	color: #808895;
 	font-size: 1.5em;
 	text-transform: lowercase;
+	margin: 0;
 }
 
 nav {
@@ -98,8 +107,7 @@ nav {
 }
 
 .contain {
-	max-width: 1330px;
-	min-width: 300px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -111,7 +119,7 @@ nav {
 	padding: 0;
 	margin: 0 0 1em 0;
 
-	&~ul {
+	&.work-list-row {
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -119,35 +127,36 @@ nav {
 
 	.col {
 		@include flex(1);
+		padding: 15px;
 
 		&-full {
 			@include flex(1 0 100%);
 			padding: 12px;
-			margin: 0 0 1em 0;
+			width: 100%;
 		}
 
 		&-half {
-			@include flex(1 0 50%);
+			@include flex(1 0 46%);
 			padding: 12px;
-			margin: 0 12px 1em 0;
+			max-width: 50%;
 
 			&:last-child {
 				margin-right: 0;
 			}
 		}
 		&-third {
-			@include flex(1 0 33.33%);
+			@include flex(1 0 33%);
 			padding: 12px;
-			margin: 0 12px 1em 0;
+			max-width: 33%;
 
 			&:last-child {
 				margin-right: 0;
 			}
 		}
 		&-fourth {
-			@include flex(1 0 25%);
+			@include flex(1 0 24%);
 			padding: 12px;
-			margin: 0 12px 1em 0;
+			max-width: 25%;
 
 			&:last-child {
 				margin-right: 0;
@@ -156,11 +165,94 @@ nav {
 	}
 }
 
+.sample {
+	border: 10px solid $white;
+	width: 100%;
+	min-height: 350px;
+	display: block;
+	outline: none;
+	cursor: pointer;
+	@include transition(all, .2s, ease-in);
+
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0px 6px 6px -6px rgba(0,0,0,0.3);
+		background-size: contain;
+	}
+
+	&.sb {
+		background: url(../img/samples/sb.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	&.shop {
+		background: url(../img/samples/shop.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	&.md {
+		background: url(../img/samples/md.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	&.zip {
+		background: url(../img/samples/zip.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	&:hover {
+		background-color: #fdfdfd;
+	}
+}
+
+[id^="wl-"] {
+	min-height: 100vh;
+	position: relative;
+	padding: 1em;
+}
+
+#wl-about {
+	background-color: $white;
+
+	p {
+		font-size: 1.1em;
+		line-height: 1.6;
+	}
+}
+
 @media screen and (min-width: 660px) and (max-width: 925px) {
 	.logo {
 		width: 400px;
 		height: 50px;
 		vertical-align: baseline;
+	}
+
+	.row {
+		@include flex-box()
+		flex-flow: row wrap;
+
+		.col {
+			@include flex(1);
+			padding: 15px;
+
+			&-full {
+				@include flex(1 0 50%);
+				max-width: 50%;
+			}
+
+			&-half {
+				@include flex(1 0 50%);
+				max-width: 50%;
+			}
+			&-third {
+				@include flex(1 0 50%);
+				max-width: 50%;
+			}
+			&-fourth {
+				@include flex(1 0 50%);
+				max-width: 50%;
+			}
+		}
 	}
 }
 @media screen and (min-width: 240px) and (max-width: 650px) {
@@ -175,5 +267,42 @@ nav {
 		display: block;
 		margin: 0 auto;
 		text-align: center;
+
+		a {
+			font-size: 1em;
+			padding: 8px;
+		}
+	}
+
+	.row {
+		@include flex-box()
+		flex-flow: column wrap;
+
+		.col {
+			@include flex(1);
+			padding: 15px;
+
+			&-full {
+				@include flex(1);
+				max-width: 100%;
+			}
+
+			&-half {
+				@include flex(1);
+				max-width: 100%;
+			}
+			&-third {
+				@include flex(1);
+				max-width: 100%;
+			}
+			&-fourth {
+				@include flex(1);
+				max-width: 100%;
+			}
+		}
+	}
+
+	.sample {
+		min-height: 250px;
 	}
 }

@@ -57,10 +57,10 @@ h2 {
 
 /* line 100, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
 .btn {
-  border: none;
+  border: 1px solid #e9e9e9;
   text-decoration: none;
-  background-color: transparent;
-  color: transparent;
+  background-color: #fff;
+  color: #6184d8;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -73,17 +73,20 @@ h2 {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  font-family: 'Rift-Regular';
+  font-family: 'Nexa';
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-weight: bold;
   vertical-align: middle;
   cursor: pointer; }
-  /* line 117, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+  /* line 116, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+  .btn:hover {
+    background-color: #fdfdfd;
+    box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.4); }
+  /* line 121, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
   .btn.light {
     background-color: #fff;
     color: #000; }
-  /* line 122, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
+  /* line 126, /Users/cwaldron/Sites/CW/cw/app/css/_vari.scss */
   .btn.dark {
     background-color: #000;
     color: #fff; }
@@ -92,33 +95,28 @@ h2 {
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
-  line-height: 1;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in; }
+  height: 100%; }
 
-/* line 12, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 10, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 body {
   color: #000;
   font-size: 16px;
-  padding: 1em;
+  padding: 0;
   margin: 0;
   border: 20px solid #fff;
   background-color: #f7f8f9;
   min-height: 100vh;
   font-family: 'Nexa', 'Helvetica', sans-serif; }
 
-/* line 23, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 21, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 #masthead {
   margin: 1em auto;
+  padding: 1em;
   width: 100%;
   height: auto;
   display: block; }
 
-/* line 30, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 29, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 a {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -126,7 +124,7 @@ a {
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in; }
 
-/* line 34, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 33, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .toolbar {
   width: 100%;
   display: block;
@@ -135,13 +133,13 @@ a {
   color: #000;
   height: 40px;
   border-bottom: 1px solid #e9e9e9; }
-  /* line 43, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 42, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   .toolbar ul {
     padding: 0;
     margin: 0;
     width: 100%;
     list-style: none; }
-    /* line 50, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    /* line 49, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     .toolbar ul li {
       flex: 1;
       -webkit-box-flex: 1;
@@ -156,7 +154,7 @@ a {
       -ms-transition: all 0.4s ease-in;
       transition: all 0.4s ease-in; }
 
-/* line 59, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 58, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .logo {
   width: 600px;
   height: 80px;
@@ -165,24 +163,34 @@ a {
   background-size: contain;
   margin: 0 auto; }
 
-/* line 68, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-.title {
-  font-family: 'Nexa', 'Helvetica', sans-serif;
-  font-size: 3em !important;
-  font-weight: bold;
-  line-height: normal; }
+/* line 67, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.section-header {
+  margin: 0 0 2em 0;
+  width: 100%;
+  display: block;
+  padding: 0 0 1em 0;
+  border-bottom: 1px solid #e9e9e9; }
 
 /* line 75, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.title {
+  font-family: 'Nexa', 'Helvetica', sans-serif;
+  font-size: 4em !important;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0 0 10px 0; }
+
+/* line 83, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .subtitle {
   font-family: Georgia, serif;
   color: #808895;
   font-size: 1.5em;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  margin: 0; }
 
-/* line 82, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 91, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 nav {
   display: inline-block; }
-  /* line 85, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 94, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   nav a {
     display: inline-block;
     font-family: Georgia;
@@ -190,20 +198,19 @@ nav {
     color: #808895;
     padding: 10px;
     font-size: 1.3em; }
-    /* line 93, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    /* line 102, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     nav a:hover {
       background-color: #fdfdfd;
       color: #FF5154; }
 
-/* line 100, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 109, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .contain {
-  max-width: 1330px;
-  min-width: 300px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   position: relative; }
 
-/* line 108, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+/* line 116, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
 .row {
   display: -webkit-box;
   /* OLD */
@@ -224,19 +231,20 @@ nav {
   flex-flow: row wrap;
   padding: 0;
   margin: 0 0 1em 0; }
-  /* line 114, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
-  .row ~ ul {
+  /* line 122, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .row.work-list-row {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 120, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 128, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   .row .col {
     flex: 1;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
-    -ms-flex: 1; }
-    /* line 123, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    -ms-flex: 1;
+    padding: 15px; }
+    /* line 132, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     .row .col-full {
       flex: 1 0 100%;
       -webkit-box-flex: 1 0 100%;
@@ -244,63 +252,240 @@ nav {
       -webkit-flex: 1 0 100%;
       -ms-flex: 1 0 100%;
       padding: 12px;
-      margin: 0 0 1em 0; }
-    /* line 129, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      width: 100%; }
+    /* line 138, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     .row .col-half {
-      flex: 1 0 50%;
-      -webkit-box-flex: 1 0 50%;
-      -moz-box-flex: 1 0 50%;
-      -webkit-flex: 1 0 50%;
-      -ms-flex: 1 0 50%;
+      flex: 1 0 46%;
+      -webkit-box-flex: 1 0 46%;
+      -moz-box-flex: 1 0 46%;
+      -webkit-flex: 1 0 46%;
+      -ms-flex: 1 0 46%;
       padding: 12px;
-      margin: 0 12px 1em 0; }
-      /* line 134, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      max-width: 50%; }
+      /* line 143, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
       .row .col-half:last-child {
         margin-right: 0; }
-    /* line 138, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    /* line 147, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     .row .col-third {
-      flex: 1 0 33.33%;
-      -webkit-box-flex: 1 0 33.33%;
-      -moz-box-flex: 1 0 33.33%;
-      -webkit-flex: 1 0 33.33%;
-      -ms-flex: 1 0 33.33%;
+      flex: 1 0 33%;
+      -webkit-box-flex: 1 0 33%;
+      -moz-box-flex: 1 0 33%;
+      -webkit-flex: 1 0 33%;
+      -ms-flex: 1 0 33%;
       padding: 12px;
-      margin: 0 12px 1em 0; }
-      /* line 143, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      max-width: 33%; }
+      /* line 152, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
       .row .col-third:last-child {
         margin-right: 0; }
-    /* line 147, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    /* line 156, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
     .row .col-fourth {
-      flex: 1 0 25%;
-      -webkit-box-flex: 1 0 25%;
-      -moz-box-flex: 1 0 25%;
-      -webkit-flex: 1 0 25%;
-      -ms-flex: 1 0 25%;
+      flex: 1 0 24%;
+      -webkit-box-flex: 1 0 24%;
+      -moz-box-flex: 1 0 24%;
+      -webkit-flex: 1 0 24%;
+      -ms-flex: 1 0 24%;
       padding: 12px;
-      margin: 0 12px 1em 0; }
-      /* line 152, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      max-width: 25%; }
+      /* line 161, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
       .row .col-fourth:last-child {
         margin-right: 0; }
 
+/* line 168, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+.sample {
+  border: 10px solid #fff;
+  width: 100%;
+  min-height: 350px;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  /* line 177, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.3);
+    background-size: contain; }
+  /* line 183, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample.sb {
+    background: url(../img/samples/sb.jpg) no-repeat center center;
+    background-size: cover; }
+  /* line 188, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample.shop {
+    background: url(../img/samples/shop.jpg) no-repeat center center;
+    background-size: cover; }
+  /* line 193, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample.md {
+    background: url(../img/samples/md.jpg) no-repeat center center;
+    background-size: cover; }
+  /* line 198, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample.zip {
+    background: url(../img/samples/zip.jpg) no-repeat center center;
+    background-size: cover; }
+  /* line 203, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample:hover {
+    background-color: #fdfdfd; }
+
+/* line 208, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+[id^="wl-"] {
+  min-height: 100vh;
+  position: relative;
+  padding: 1em; }
+
+/* line 214, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+#wl-about {
+  background-color: #fff; }
+  /* line 217, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  #wl-about p {
+    font-size: 1.1em;
+    line-height: 1.6; }
+
 @media screen and (min-width: 660px) and (max-width: 925px) {
-  /* line 160, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 224, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   .logo {
     width: 400px;
     height: 50px;
-    vertical-align: baseline; } }
+    vertical-align: baseline; }
+  /* line 230, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .row {
+    display: -webkit-box;
+    /* OLD */
+    display: -moz-box;
+    /* OLD */
+    display: box;
+    /* OLD */
+    display: -o-flex;
+    /* OLD (MIDDLE?)*/
+    display: -ms-flexbox;
+    /* MIDDLE */
+    display: flexbox;
+    /* MIDDLE */
+    display: -webkit-flex;
+    /* NEW */
+    display: flex;
+    /* NEW */
+    flex-flow: row wrap; }
+    /* line 234, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    .row .col {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      padding: 15px; }
+      /* line 238, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-full {
+        flex: 1 0 50%;
+        -webkit-box-flex: 1 0 50%;
+        -moz-box-flex: 1 0 50%;
+        -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+        max-width: 50%; }
+      /* line 243, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-half {
+        flex: 1 0 50%;
+        -webkit-box-flex: 1 0 50%;
+        -moz-box-flex: 1 0 50%;
+        -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+        max-width: 50%; }
+      /* line 247, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-third {
+        flex: 1 0 50%;
+        -webkit-box-flex: 1 0 50%;
+        -moz-box-flex: 1 0 50%;
+        -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+        max-width: 50%; }
+      /* line 251, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-fourth {
+        flex: 1 0 50%;
+        -webkit-box-flex: 1 0 50%;
+        -moz-box-flex: 1 0 50%;
+        -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+        max-width: 50%; } }
 
 @media screen and (min-width: 240px) and (max-width: 650px) {
-  /* line 167, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 259, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   .logo {
     display: block;
     width: 90%;
     margin: 0 auto; }
-  /* line 173, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  /* line 265, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
   nav {
     width: 90%;
     display: block;
     margin: 0 auto;
-    text-align: center; } }
+    text-align: center; }
+    /* line 271, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    nav a {
+      font-size: 1em;
+      padding: 8px; }
+  /* line 277, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .row {
+    display: -webkit-box;
+    /* OLD */
+    display: -moz-box;
+    /* OLD */
+    display: box;
+    /* OLD */
+    display: -o-flex;
+    /* OLD (MIDDLE?)*/
+    display: -ms-flexbox;
+    /* MIDDLE */
+    display: flexbox;
+    /* MIDDLE */
+    display: -webkit-flex;
+    /* NEW */
+    display: flex;
+    /* NEW */
+    flex-flow: column wrap; }
+    /* line 281, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+    .row .col {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      padding: 15px; }
+      /* line 285, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-full {
+        flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        max-width: 100%; }
+      /* line 290, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-half {
+        flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        max-width: 100%; }
+      /* line 294, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-third {
+        flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        max-width: 100%; }
+      /* line 298, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+      .row .col-fourth {
+        flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        max-width: 100%; }
+  /* line 305, /Users/cwaldron/Sites/CW/cw/app/css/_base.scss */
+  .sample {
+    min-height: 250px; } }
 
 /* line 4, /Users/cwaldron/Sites/CW/cw/app/css/styles.scss */
 *, *:before, *:after {
