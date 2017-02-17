@@ -9,99 +9,12 @@
 	  <script>require('initialize');</script>
 	</head>
 	<body>
-		<div class="contact-form">
-			<button class="contact close"><span>+</span></button>
-			<h3>Get in contact</h3>
-			<form action"." method="POST">
-				<input type="text" placeholder="placeholder">
-				<input type="text" placeholder="placeholder">
-				<input type="text" placeholder="placeholder">
-				<input type="submit" value="Submit" class="btn">
-			</form>
-		</div>
-		<header id="masthead">
-			<div class="logo"></div>
-			<nav>
-				<a href="">Work</a>
-				<a href="">About</a>
-				<a href="" class="contact">Contact</a>
-				<a href="http://superblack.co" target="_blank">Blog</a>
-			</nav>
+		<header class="hero">
+			<div class="identity"></div>
 		</header>
-
-		<main>
-			<section id="wl-work">
-				<div class="contain">
-					<ul class="row work-list-row">
-						<li class="col-third">
-							<a href=""><div class="sample sb"></div></a>
-						</li>
-						<li class="col-third">
-							<a href=""><div class="sample md"></div></a>
-						</li>
-						<li class="col-third">
-							<a href=""><div class="sample shop"></div></a>
-						</li>
-						<li class="col-third">
-							<a href=""><div class="sample zip"></div></a>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section id="wl-about">
-				<div class="contain">
-					<div class="row">
-						<div class="col-half">
-							<header class="section-header">
-								<h1 class="title">About Waldron Inc.</h1>
-								<h2 class="subtitle">Learn about the man named Carl.</h2>
-							</header>
-							<p>I live in a constant state of "Let me create something dammit!". It would be horrible if it wasn't so motivating. d have a fervent need to build, design, draw, make, create. It's THE driving force in my small corner of life.</p>
-
-							<p><strong>So how and what do I create you ask?</strong> First off, that's a great question, thanks for asking.</p>
-
-							<p>I scratch that creative bug by lending my talents to people who need things designed, developed, drawn or made. I build websites using my many years of web design and front-end development experience (around 10+ years). I design and deliver brands for companies large and small. I draw up user experience wireframes, create icons, build CMS systems using Django (and soon Ruby on Rails). I have been involved with every step of a creative project from brainstorm to final deliverable which has allowed me to cultivate the skills necessary to be an asset to any part of the process. </p>
-
-							<p>The short answer is I love to make things (and often stuff), I love to help people (and dogs), and I love to do push-ups. It's in my DNA.</p>
-
-							<p><strong>I am a creative mutant. Nice to meet you.</strong></p>
-
-							<p>List of things I know how to use (because people love lists):<br>
-								<ul>
-									<li> Adobe Creative Suite</li>
-									<li> HTML5 <strong>&amp;</strong> CSS</li>
-									<li> Less / Sass</li>
-									<li> JQuery</li>
-									<li> Brunch</li>
-									<li> Git</li>
-									<li> Angularjs</li>
-									<li> Django</li>
-									<li> Pen/Pencil and Paper</li>
-									<li> My brain</li>
-									<li> My words</li>
-									<li> Common sense / uncommon sense</li>
-								</ul>
-							</p>
-
-							<p>And a bunch of other stuff that I can't really remember at the moment, but they are there. Trust me.</p>
-
-							<p><a href="" class="btn">Contact Me</a></p>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="wl-contact"></section>
+		<main class="contain">
+			<p>A creative firm generating its own projects, initiatives, and content while taking on limited client work. Run by Carl Waldron in Brooklyn NY.</p>
 		</main>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.contact').on('click', function(e){
-				e.preventDefault();
-				$('.contact-form').animate({width:'toggle'},350);
-			});
-		});
-	</script>
-	
 </html>

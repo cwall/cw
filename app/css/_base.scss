@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  position: relative;
 }
 
 body {
@@ -12,10 +13,24 @@ body {
 	font-size: 16px;
 	padding: 0;
 	margin: 0;
-	border: 20px solid $white;
+	//border: 20px solid $white;
 	background-color: #f7f8f9;
 	min-height: 100vh;
 	font-family: 'Nexa', 'Helvetica', sans-serif;
+}
+
+.identity {
+	width: 110px;
+	height: 110px;
+	display: inline-block;
+	background: url(../img/identity.svg) no-repeat center center;
+	background-size: contain;
+	margin: 0 auto;
+	@include transition(all, .2s, ease-in);
+
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
 #masthead {
@@ -26,8 +41,37 @@ body {
 	display: block;
 }
 
+.hero {
+	width: 100%;
+	height: 50vh;
+	background-color: $white;
+	// -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+	// clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+	padding: 20px;
+	position: relative;
+
+	.identity {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 200px;
+		height: 200px;
+	}
+}
+
 a {
 	@include transition(all, .2s, ease-in);
+}
+
+.contain {
+	max-width: 1200px;
+	min-width: 300px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
 }
 
 .toolbar {
@@ -55,323 +99,4 @@ a {
 	}
 }
 
-.logo {
-	width: 600px;
-	height: 80px;
-	display: inline-block;
-	background: url(../img/waldron-logo.svg) no-repeat center center;
-	background-size: contain;
-	margin: 0 auto;
-}
 
-.section-header {
-	margin: 0 0 2em 0;
-	width: 100%;
-	display: block;
-	padding: 0 0 1em 0;
-	border-bottom: 1px solid $gray;
-}
-
-.title {
-	font-family: 'Nexa', 'Helvetica', sans-serif;
-	font-size: 4em !important;
-	font-weight: bold;
-	line-height: normal;
-	margin: 0 0 10px 0;
-}
-
-.subtitle {
-	font-family: Georgia, serif;
-	color: #808895;
-	font-size: 1.5em;
-	text-transform: lowercase;
-	margin: 0;
-}
-
-nav {
-	display: inline-block;
-
-	a {
-		display: inline-block;
-		font-family: Georgia;
-		text-decoration: none;
-		color: #808895;
-		padding: 10px;
-		font-size: 1.3em;
-
-		&:hover {
-			background-color: #fdfdfd;
-			color: $red;
-		}
-	}
-}
-
-.contain {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-}
-
-.row {
-	@include flex-box()
-	flex-flow: row wrap;
-	padding: 0;
-	margin: 0 0 1em 0;
-
-	&.work-list-row {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.col {
-		@include flex(1);
-		padding: 15px;
-
-		&-full {
-			@include flex(1 0 100%);
-			padding: 12px;
-			width: 100%;
-		}
-
-		&-half {
-			@include flex(1 0 46%);
-			padding: 12px;
-			max-width: 50%;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-		&-third {
-			@include flex(1 0 33%);
-			padding: 12px;
-			max-width: 33%;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-		&-fourth {
-			@include flex(1 0 24%);
-			padding: 12px;
-			max-width: 25%;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-}
-
-.sample {
-	border: 10px solid $white;
-	width: 100%;
-	min-height: 350px;
-	display: block;
-	outline: none;
-	cursor: pointer;
-	@include transition(all, .2s, ease-in);
-
-	&:hover {
-		transform: scale(1.05);
-		box-shadow: 0px 6px 6px -6px rgba(0,0,0,0.3);
-		background-size: contain;
-	}
-
-	&.sb {
-		background: url(../img/samples/sb.jpg) no-repeat center center;
-		background-size: cover;
-	}
-
-	&.shop {
-		background: url(../img/samples/shop.jpg) no-repeat center center;
-		background-size: cover;
-	}
-
-	&.md {
-		background: url(../img/samples/md.jpg) no-repeat center center;
-		background-size: cover;
-	}
-
-	&.zip {
-		background: url(../img/samples/zip.jpg) no-repeat center center;
-		background-size: cover;
-	}
-
-	&:hover {
-		background-color: #fdfdfd;
-	}
-}
-
-[id^="wl-"] {
-	min-height: 100vh;
-	position: relative;
-	padding: 1em;
-}
-
-#wl-about {
-	background-color: $white;
-
-	p {
-		font-size: 1.1em;
-		line-height: 1.6;
-	}
-}
-
-form {
-	@include flex-box();
-	flex-flow: column wrap;
-
-	input, label {
-		@include flex(1 0);
-		font-size: 1.2em;
-	}
-
-	input {
-		margin: 0 0 10px 0;
-		@include border-radius(3px);
-		padding: 8px;
-		border: none;
-		background-color: #ffdddd;
-		outline: none;
-		@include transition(all, .2s, ease-in);
-
-		&:focus {
-			background-color: $white;
-		}
-	}
-}
-
-.contact-form {
-	@include transition(all, .2s, ease-in);
-	height: 100vh;
-	width: 300px;
-	z-index: 2;
-	display: none;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	background-color: $red;
-	padding: 3em 1em;
-
-	form {
-		width: 100%;
-	}
-
-	.close {
-		color: $white;
-		position: absolute;
-		top: 0;
-		right: 0;
-		padding: 20px;
-		display: block;
-		background: transparent;
-		@include border-radius(100%);
-		border: none;
-		cursor: pointer;
-		outline: none;
-	
-		span {
-			transform: rotate(45deg);
-			transform-origin: center center;
-			display: block;
-			text-align: center;
-			font-size: 3em;
-			line-height: 0;
-		}
-	}
-}
-
-@media screen and (min-width: 660px) and (max-width: 925px) {
-	.logo {
-		width: 400px;
-		height: 50px;
-		vertical-align: baseline;
-	}
-
-	.row {
-		@include flex-box()
-		flex-flow: row wrap;
-
-		.col {
-			@include flex(1);
-			padding: 15px;
-
-			&-full {
-				@include flex(1 0 50%);
-				max-width: 50%;
-			}
-
-			&-half {
-				@include flex(1 0 50%);
-				max-width: 50%;
-			}
-			&-third {
-				@include flex(1 0 50%);
-				max-width: 50%;
-			}
-			&-fourth {
-				@include flex(1 0 50%);
-				max-width: 50%;
-			}
-		}
-	}
-}
-@media screen and (min-width: 240px) and (max-width: 650px) {
-	.logo {
-		display: block;
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	nav {
-		width: 90%;
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-
-		a {
-			font-size: 1em;
-			padding: 8px;
-		}
-	}
-
-	.row {
-		@include flex-box()
-		flex-flow: column wrap;
-
-		.col {
-			@include flex(1);
-			padding: 15px;
-
-			&-full {
-				@include flex(1);
-				max-width: 100%;
-			}
-
-			&-half {
-				@include flex(1);
-				max-width: 100%;
-			}
-			&-third {
-				@include flex(1);
-				max-width: 100%;
-			}
-			&-fourth {
-				@include flex(1);
-				max-width: 100%;
-			}
-		}
-	}
-
-	.sample {
-		min-height: 250px;
-	}
-
-	.contact-form {
-		width: 100%;
-	}
-}
